@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body{
+  background-color: #000000
+}
+
+main{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 400px;
+  background-color: rgba(255,255,255,0.4);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea{
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 10px;
+  
+}
+
+label{
+  margin-left: 10px;
+  margin-bottom: 5px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+input, textarea focus {
+  background-color: #FDF59C;
+  
+}
+
+button {
+  padding: 10px 20px;
+  color: #000000;
+  background-color: #218bfd;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.msg {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.4);
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.msg.sucesso {
+  background-color: #329542;
+}
+.msg.erro {
+  background-color: #FF2400;
+}
